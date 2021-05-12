@@ -1,0 +1,281 @@
+* {
+	padding: 0%;
+	margin: 0%;
+	box-sizing: border-box;
+}
+
+/* GLOBAL START */
+.pageContainer {
+	max-width: 1120px;
+	margin-top: 4%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.nav-link {
+	color: black;
+	font-size: 20px;
+}
+
+.nav-link:hover {
+	color: black;
+}
+
+.brand_logo {
+	width: 100%;
+}
+
+@media screen and (max-width: 990px) {
+	.brand_logo {
+		width: 90%;
+	}
+}
+@media screen and (max-width: 300px) {
+	.brand_logo {
+		width: 60%;
+	}
+}
+
+.navbar {
+	padding: 0px;
+	margin-bottom: 0.8rem;
+}
+
+.themeBtn {
+	background-color: transparent;
+	border: 2px solid #000;
+	border-radius: 20px;
+	padding: 0.5rem 2rem;
+}
+
+.themeBtn:hover {
+	background-color: #000;
+	color: #fff;
+}
+/* GLOBAL END */
+
+/* MAIN PAGE START */
+.img-container {
+	position: relative;
+}
+
+.videoText {
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+@media screen and (max-width: 520px) {
+	.videoContainer video {
+		height: 380px;
+		width: 100%;
+		object-fit: cover;
+	}
+}
+
+@media screen and (max-width: 750px) {
+	.videoText h1 {
+		font-size: 1.6rem;
+	}
+	.videoText h5 {
+		font-size: 0.8rem;
+	}
+}
+@media screen and (max-width: 450px) {
+	.videoText h1 {
+		font-size: 1.2rem;
+	}
+	.videoText h5 {
+		font-size: 0.7rem;
+	}
+}
+
+.image {
+	opacity: 1;
+	display: block;
+	width: 100%;
+	height: auto;
+	transition: 0.5s ease;
+	backface-visibility: hidden;
+}
+
+.middle {
+	transition: 0.5s ease;
+	opacity: 0;
+	position: absolute;
+	left: 170px;
+	top: 100px;
+	transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	text-align: center;
+	height: 100%;
+}
+
+.img-container:hover .image {
+	opacity: 0.7;
+}
+
+.img-container:hover .middle {
+	opacity: 1;
+	background: black;
+}
+
+.text {
+	color: white;
+	font-size: 16px;
+}
+
+/* MAIN PAGE END */
+
+/* ABOUT PAGE START */
+
+#box-wrapper {
+	height: 310px;
+	display: block;
+	overflow-y: hidden;
+	overflow-x: auto;
+	white-space: nowrap;
+}
+.scroll-img-list {
+	list-style-type: none;
+	display: inline-block;
+	height: 300px;
+	width: 300px;
+	background-color: lightblue;
+	margin: 5px;
+}
+#box-wrapper::-webkit-scrollbar {
+	display: none;
+}
+
+.sliderBtn {
+	cursor: pointer;
+}
+/* ABOUT PAGE END */
+
+/* CONTACT PAGE START */
+
+.contactInp {
+	border: none !important;
+	border-bottom: 1px solid !important;
+	border-radius: 0 !important;
+	outline: none;
+	width: 100%;
+	padding: 0.4rem 0rem;
+}
+
+/* CONTACT PAGE END */
+
+/* PROJECT DETAILS PAGE START */
+
+/* PROJECT DETAILS PAGE END */
+
+/* PROJECTS PAGE START */
+.img-container {
+	position: relative;
+	width: 100%;
+}
+
+.img-container img {
+	display: block;
+	width: 100%;
+	height: 300px;
+}
+
+.img-container .overlayImage {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 100%;
+	width: 100%;
+	opacity: 0;
+	transition: 0.3s ease;
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+.img-container:hover .overlayImage {
+	opacity: 1;
+}
+
+.img-container .text {
+	text-transform: capitalize;
+	color: #fff;
+	font-size: 22px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	text-align: center;
+}
+
+/* PROJECTS PAGE END */
+
+/* REVIEW PAGE START */
+.reviews {
+	border: 6px solid gainsboro;
+	box-shadow: 0px 0px 7px 2px darkgrey;
+	padding: 9px;
+	margin-bottom: 45px;
+	font-weight: 600;
+}
+
+.reviews2 {
+	border: 6px solid rgb(140, 140, 140);
+	box-shadow: 0px 0px 7px 2px darkgrey;
+	padding: 9px;
+	margin-bottom: 45px;
+	font-weight: 600;
+}
+
+/* REVIEW PAGE END */
+
+/* REVIEW 2 PAGE START */
+
+/* REVIEW 2 PAGE END */
+
+/* PORTFOLIO PAGE START */
+.img-container2 {
+	position: relative;
+	width: 100%;
+}
+
+.img-container2 img {
+	display: block;
+	width: 100%;
+	height: 300px;
+}
+
+.img-container2 .overlayImage {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 100%;
+	width: 100%;
+	opacity: 1;
+	transition: 0.3s ease;
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+.img-container2:hover .overlayImage {
+	opacity: 0;
+}
+
+.img-container2 .text {
+	text-transform: capitalize;
+	color: #fff;
+	font-size: 22px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	text-align: center;
+}
+/* PORTFOLIO PAGE END */

@@ -46,6 +46,7 @@
 	border: 2px solid #000;
 	border-radius: 20px;
 	padding: 0.5rem 2rem;
+	font-weight: 600;
 }
 
 .themeBtn:hover {
@@ -167,7 +168,31 @@
 /* CONTACT PAGE END */
 
 /* PROJECT DETAILS PAGE START */
+.img-container3 {
+	position: relative;
+	width: 100%;
+}
 
+.img-container3 img {
+	display: block;
+	width: 100%;
+	height: 300px;
+}
+.img-container3:hover .overlayImage {
+	opacity: 1;
+}
+.img-container3 .overlayImage {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 100%;
+	width: 100%;
+	opacity: 0;
+	transition: 0.3s ease;
+	background-color: rgba(255, 255, 255, 0.3);
+}
 /* PROJECT DETAILS PAGE END */
 
 /* PROJECTS PAGE START */

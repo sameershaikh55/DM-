@@ -25,7 +25,7 @@
 				<!--navbar-->
 				<nav class="navbar navbar-expand-md">
 					<a class="navbar-brand" href="index.html">
-						<img src="files\logo.jpeg" alt="" class="brand_logo" />
+						<img src="files/logo.webp" alt="" class="brand_logo" />
 					</a>
 					<button
 						class="navbar-toggler"
@@ -80,94 +80,96 @@
 				<!--contact section-->
 				<section>
 					<div class="text-center my-5">
-						<h1>Contact Us</h1>
+						<h1>Cont<span class="head_underline">a</span>ct Us</h1>
 					</div>
-					<div class="container">
+					<div class="container-fluid">
 						<div class="row">
-							<!--contact form-->
-							<div class="col-md-6">
-								<form>
-									<div class="form-row">
-										<div class="form-group col-md-6">
-											<label class="font-weight-bold" for="inputEmail4"
-												>First Name</label
-											>
-											<input
-												type="text"
-												class="contactInp"
-												id="inputEmail4"
-												placeholder=""
-											/>
-										</div>
-										<div class="form-group col-md-6">
-											<label class="font-weight-bold" for="inputPassword4"
-												>Last Name</label
-											>
-											<input
-												type="text"
-												class="contactInp"
-												id="inputPassword4"
-												placeholder=""
-											/>
-										</div>
+							<div class="col-10 mx-auto">
+								<div class="row">
+									<!--contact form-->
+									<div class="col-md-6">
+										<form>
+											<div class="form-row">
+												<div class="form-group col-md-6">
+													<label class="font-weight-bold" for="inputEmail4"
+														>First Name</label
+													>
+													<input
+														type="text"
+														class="contactInp"
+														id="inputEmail4"
+														placeholder=""
+													/>
+												</div>
+												<div class="form-group col-md-6">
+													<label class="font-weight-bold" for="inputPassword4"
+														>Last Name</label
+													>
+													<input
+														type="text"
+														class="contactInp"
+														id="inputPassword4"
+														placeholder=""
+													/>
+												</div>
+											</div>
+											<div class="form-row">
+												<div class="form-group col-md-6">
+													<label class="font-weight-bold" for="inputEmail4"
+														>Email</label
+													>
+													<input
+														type="email"
+														class="contactInp"
+														id="inputEmail4"
+														placeholder=""
+													/>
+												</div>
+												<div class="form-group col-md-6">
+													<label class="font-weight-bold" for="inputPassword4"
+														>Phone</label
+													>
+													<input
+														type="tel"
+														class="contactInp"
+														id="inputPassword4"
+														placeholder=""
+													/>
+												</div>
+											</div>
+											<div class="form-group">
+												<label class="font-weight-bold" for="inputAddress"
+													>Address</label
+												>
+												<input
+													type="text"
+													class="contactInp"
+													id="inputAddress"
+													placeholder=""
+												/>
+											</div>
+											<button type="submit" class="themeBtn btn btn-light">
+												Sign in >
+											</button>
+										</form>
 									</div>
-									<div class="form-row">
-										<div class="form-group col-md-6">
-											<label class="font-weight-bold" for="inputEmail4"
-												>Email</label
-											>
-											<input
-												type="email"
-												class="contactInp"
-												id="inputEmail4"
-												placeholder=""
-											/>
-										</div>
-										<div class="form-group col-md-6">
-											<label class="font-weight-bold" for="inputPassword4"
-												>Phone</label
-											>
-											<input
-												type="tel"
-												class="contactInp"
-												id="inputPassword4"
-												placeholder=""
-											/>
-										</div>
+									<!--map location-->
+									<div class="col-md-6 mt-5 mt-md-0">
+										<iframe
+											src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.729799584687!2d103.90360081475403!3d1.3384103990238465!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da17e45292fb61%3A0x53f09ab2bb91b45!2s8%20Kaki%20Bukit%20Ave%204%2C%20Singapore%20415875!5e0!3m2!1sen!2s!4v1620759325827!5m2!1sen!2s"
+											style="border: 0; width: 100%; height: 100%"
+											allowfullscreen=""
+											loading="lazy"
+										></iframe>
 									</div>
-									<div class="form-group">
-										<label class="font-weight-bold" for="inputAddress"
-											>Address</label
-										>
-										<input
-											type="text"
-											class="contactInp"
-											id="inputAddress"
-											placeholder=""
-										/>
-									</div>
-									<button type="submit" class="themeBtn btn btn-light">
-										Sign in >
-									</button>
-								</form>
-							</div>
-							<!--map location-->
-							<div class="col-md-6 mt-5 mt-md-0">
-								<iframe
-									src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.729799584687!2d103.90360081475403!3d1.3384103990238465!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da17e45292fb61%3A0x53f09ab2bb91b45!2s8%20Kaki%20Bukit%20Ave%204%2C%20Singapore%20415875!5e0!3m2!1sen!2s!4v1620759325827!5m2!1sen!2s"
-									style="border: 0; width: 100%; height: 100%"
-									allowfullscreen=""
-									loading="lazy"
-								></iframe>
-							</div>
-						</div>
-						<!--contact info-->
+								</div>
+	<!--contact info-->
 						<div class="row my-5" style="text-align: center">
-							<div class="col-md-4">
+							<div class="col-md-4 text-left">
 								<h3>Contact</h3>
-								<p>+65 6786 6785</p>
-								<p>
-									<a href="mailto:info@mysite.com" target="_self"
+								<p class="font-weight-bold m-0">+65 6786 6785</p>
+								<p class="m-0">
+									<a class="text-dark" href="mailto:info@mysite.com" target="_self"
 										><span style="font-size: 16px">info@dmplus.com.sg</span></a
 									>
 								</p>
@@ -199,25 +201,37 @@
 									8 Kaki Bukit Avenue 4, #05-31, Premier@ Kaki Bukit S(415875)
 								</p>
 							</div>
-							<div class="col-md-4">
+							<div class="col-md-4 text-right">
 								<h3>Opening Hours</h3>
-								<p>Mon - Fri 9:00 am – 6:00 pm</p>
-								<p>Mon - Fri 9:00 am – 6:00 pm</p>
-								<p>Mon - Fri 9:00 am – 6:00 pm</p>
+								<p class="m-0">Mon - Fri 9:00 am – 6:00 pm</p>
+								<p class="m-0">Saturday 9:00 am – 1:00 pm</p>
+								<p class="m-0">Close on Sundays and PH​</p>
 							</div>
 						</div>
 					</div>
 				</section>
 
 				<!--footer-->
-				<section>
+
+
+
+							</div>
+						</div>
+					
+			<section class="container-fluid">
 					<div class="row my-5 text-center">
-						<div class="col align-self-center" style="opacity: 0.5">
+						<div class="col align-self-center">
 							<span style="letter-spacing: 0em">
-								<span style="font-size: 18px"
+								<span
+									class="font-weight-bold"
+									style="font-size: 18px; opacity: 0.5"
 									>Phone:+65 6786 6785 | Email
 									<span style="text-decoration: underline"
-										><a href="mailto:info@dmplus.com.sg" target="_self"
+										><a
+											class="text-dark text font-weight-bold"
+											style="opacity: 0.5"
+											href="mailto:info@dmplus.com.sg"
+											target="_self"
 											>info@dmplus.com.sg</a
 										></span
 									>
@@ -232,7 +246,7 @@
 									"
 								>
 									<span style="letter-spacing: 0em">
-										<span style="font-size: 18px"
+										<span style="font-size: 18px; opacity: 0.5"
 											>8 Kaki Bukit Avenue 4, #05-31, Premier@ Kaki Bukit
 											Singapore 415875</span
 										>
@@ -241,8 +255,7 @@
 							</span>
 						</div>
 					</div>
-				</section>
-			</div>
+				</section>			</div>
 		</div>
 	</body>
 </html>

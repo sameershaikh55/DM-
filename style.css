@@ -228,34 +228,6 @@
 
 /* CONTACT PAGE END */
 
-/* PROJECT DETAILS PAGE START */
-.img-container3 {
-	position: relative;
-	width: 100%;
-}
-
-.img-container3 img {
-	display: block;
-	width: 100%;
-	height: 300px;
-}
-.img-container3:hover .overlayImage {
-	opacity: 1;
-}
-.img-container3 .overlayImage {
-	position: absolute;
-	top: 0;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	height: 100%;
-	width: 100%;
-	opacity: 0;
-	transition: 0.3s ease;
-	background-color: rgba(255, 255, 255, 0.3);
-}
-/* PROJECT DETAILS PAGE END */
-
 /* PROJECTS PAGE START */
 .img-container {
 	position: relative;
@@ -375,3 +347,83 @@
 	width: 100%;
 }
 /* PORTFOLIO PAGE END */
+
+/* GALLERY START */
+.gallery {
+	margin: 0 0.65rem;
+}
+.gallery-item {
+	height: auto;
+	margin: 0.5rem;
+}
+.gallery-item img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+@media screen and (min-width: 640px) {
+	.gallery-item:first-child {
+		grid-row: span 1;
+	}
+	.gallery-item:nth-child(2) {
+		grid-column: 2 / 3;
+		grid-row: span 2;
+	}
+	.gallery-item:nth-child(3),
+	.gallery-item:nth-child(6) {
+		grid-column: span 2;
+	}
+	.gallery {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: repeat(5, 300px);
+		grid-auto-flow: row dense;
+	}
+}
+@media screen and (min-width: 640px) {
+	.gallery {
+		grid-template-columns: repeat(5, 1fr);
+		grid-template-rows: repeat(3, auto-flow);
+	}
+
+	.gallery-item:first-child,
+	.gallery-item:nth-child(7),
+	.gallery-item:nth-child(8) {
+		grid-column: span 2;
+		grid-row: span 1;
+	}
+
+	.gallery-item:nth-child(2) {
+		grid-column: span 2;
+		grid-row: span 2;
+	}
+}
+/* GALLERY END */
+
+/* PROJECT DETAILS PAGE START */
+.gallery-item {
+	position: relative;
+}
+
+.gallery-item img {
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+.gallery-item:hover .overlayImage {
+	opacity: 1;
+}
+.gallery-item .overlayImage {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 100%;
+	width: 100%;
+	opacity: 0;
+	transition: 0.3s ease;
+	background-color: rgba(255, 255, 255, 0.3);
+}
+/* PROJECT DETAILS PAGE END */

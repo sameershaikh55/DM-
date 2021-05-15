@@ -12,7 +12,7 @@
 
 /* GLOBAL START */
 .pageContainer {
-	max-width: 1100px;
+	max-width: 1130px;
 	margin-top: 4%;
 	margin-left: auto;
 	margin-right: auto;
@@ -304,6 +304,18 @@
 	transform: translate(-50%, -50%);
 	text-align: center;
 	width: 100%;
+}
+
+.featuredProjects .third {
+	padding-left: 2.5rem;
+}
+
+.featuredProjects .first {
+	padding-right: 2.5rem;
+}
+.featuredProjects .second {
+	padding-left: 1.5rem;
+	padding-right: 1.5rem;
 }
 
 /* PROJECTS PAGE END */
@@ -624,3 +636,9 @@
 }
 
 /* COPY TO CLIPBOARD END */
+
+/* FOOTER START */
+.footerLink {
+	color: #c2c5cd;
+}
+/* FOOTER END */

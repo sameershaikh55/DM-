@@ -60,6 +60,14 @@
 	letter-spacing: 3px;
 }
 
+@media screen and (max-width: 320px) {
+	.themeBtn {
+		padding: 0.5rem 1rem;
+		font-weight: 0;
+		letter-spacing: 0px;
+	}
+}
+
 .themeBtnProject {
 	background-color: transparent;
 	border: 2px solid #000;
@@ -260,6 +268,10 @@
 	padding: 0.4rem 0rem;
 }
 
+.contactInp:hover {
+	border-bottom: 2px solid !important;
+}
+
 /* CONTACT PAGE END */
 
 /* PROJECTS PAGE START */
@@ -316,6 +328,21 @@
 .featuredProjects .second {
 	padding-left: 1.5rem;
 	padding-right: 1.5rem;
+}
+
+@media screen and (max-width: 998px) {
+	.featuredProjects .third {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+
+	.featuredProjects .first {
+		padding-right: 15px;
+	}
+	.featuredProjects .second {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
 }
 
 /* PROJECTS PAGE END */
@@ -395,14 +422,14 @@
 /* PORTFOLIO PAGE END */
 
 /* GALLERY START */
-.gallery1,
+/* .gallery1,
 .gallery3,
 .gallery4,
 .gallery5,
 .gallery6,
 .gallery2 {
 	margin: 0 0.65rem;
-}
+} */
 .gallery-item1,
 .gallery-item3,
 .gallery-item4,
